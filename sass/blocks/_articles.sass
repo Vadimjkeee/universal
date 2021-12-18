@@ -1,0 +1,300 @@
+.articles
+    &-block
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: repeat(4, min-content)
+        grid-gap: 30px
+        margin-bottom: 60px
+        &__item
+            border-radius: 10px
+            background-color: $white-text
+            height: 370px
+            text-decoration: none
+    &-work
+        grid-column: span 2
+        grid-row: span 2
+        padding-top: 15px
+        padding-bottom: 13px
+        &__wrapper
+            width: 100%
+            padding-left: 35px
+            padding-top: 20px
+            background: $white-text url(../img/articles/car.png) no-repeat top right
+            border-bottom: 1px solid $tabs-border-color
+        &__subtitle
+            display: inline-block
+            margin-bottom: 18px
+            font-size: 12px
+            line-height: 15px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            color: $greyblue
+            +bold
+        &__title
+            font-family: 'Roboto Slab', serif
+            margin-top: 0
+            margin-bottom: 25px
+            max-width: 228px
+            color: $bg-section
+            font-size: 25px
+            line-height: 30px
+        &__text
+            color: $tabs-text-color
+            margin-top: 0
+            max-width: 228px
+            font-size: 14px
+            line-height: 20px
+            margin-bottom: 47px
+        &__comment
+            padding-left: 35px
+            padding-top: 13px
+            display: flex
+            align-items: center
+        &__avatar
+            width: 30px
+            height: 30px
+            border-radius: 50%
+        &__name
+            display: inline-block
+            margin-left: 10px
+            margin-right: 5px
+            font-size: 14px
+            line-height: 20px
+            color: $bg-section
+            +bold
+        &__com
+            display: inline-block
+            margin-right: 15px
+            font-size: 14px
+            line-height: 20px
+            color: $tabs-text-color
+        &__icon
+            width: 13.5px
+            height: 13.5px
+            margin-right: 5.75px
+        &__number
+            font-size: 12px
+            line-height: 15px
+            color: $input-text
+    &-project
+        grid-row: span 2
+        grid-column: 3
+        position: relative
+        color: $white-text
+        &:before
+            content: ''
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+            border-radius: 10px
+        &__image
+            width: 100%
+            height: 100%
+            border-radius: 10px
+        &__wrapper
+            position: absolute
+            top: 19px
+            left: 25px
+            right: 26px
+            bottom: 25px
+        &__popular
+            background-color: $green-btn
+            color: $white-text
+            border: none
+            border-radius: 3px
+            padding: 5px 12px
+            font-size: 12px
+            line-height: 15px
+            display: block
+            width: 92px
+            margin-bottom: 115px
+        &__theme
+            display: inline-block
+            margin-bottom: 23px
+            color: $light-purple
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            font-size: 12px
+            line-height: 15px
+            +bold
+        &__title
+            font-family: 'Roboto Slab', serif
+            font-size: 16px
+            line-height: 25px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            margin-top: 0
+            margin-bottom: 27px
+        &__profile
+            display: flex
+            align-items: center
+            justify-content: flex-start
+        &__avatar
+            width: 45px
+            height: 45px
+            border-radius: 50%
+        &__info
+            display: flex
+            flex-direction: column
+            margin-left: 10px
+        &__name
+            font-size: 14px
+            line-height: 20px
+            opacity: 0.85
+        &__stats
+            display: flex
+        &__data
+            font-size: 12px
+            line-height: 15px
+            opacity: 0.4
+        &__icon
+            width: 13.5px
+            height: 13.5px
+            margin-left: 7.75px
+            margin-right: 5.75px
+        &__number
+            font-size: 12px
+            line-height: 15px
+            opacity: 0.4
+        &__heart
+            width: 12.75px
+            height: 11.7px
+            margin-left: 8.13px
+            margin-right: 6.12px
+    &-check
+        grid-row: 1
+        grid-column: 4
+        background-color: $bluegreen
+        color: $white-text
+        height: 170px
+        &__block
+            border-bottom: 1px solid $check-border-color
+            padding-top: 24px
+            padding-right: 22px
+            padding-left: 25px
+            background: url(../img/articles/File.png) no-repeat
+            background-position: 96% 40%
+        &__title
+            font-family: 'Roboto Slab', serif
+            font-size: 16px
+            line-height: 25px
+            margin-top: 0
+            margin-bottom: 10px
+        &__format
+            display: inline-block
+            font-size: 14px
+            line-height: 20px
+            color: $check-format-file-color
+            margin-bottom: 19px
+        &__download
+            display: flex
+            align-items: center
+            justify-content: center
+            text-decoration: none
+            color: inherit
+            padding-top: 13px
+            padding-bottom: 13px
+        &__text
+            margin-left: 11px
+            font-size: 14px
+            line-height: 20px
+            +bold
+    &-tag
+        grid-column: 4
+        grid-row: 2 / 4
+        &__title
+            margin: 0
+            padding: 20px 25px
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            color: $bg-section
+            border-bottom: 1px solid $tabs-border-color
+            +bold
+        &__block
+            display: flex
+            flex-wrap: wrap
+            padding: 25px 0px 15px 25px
+        &__button
+            padding: 4px 15px
+            border-radius: 5px
+            border: 1px solid $tabs-border-color
+            background-color: inherit
+            margin-bottom: 15px
+            font-size: 14px
+            line-height: 20px
+            color: $bg-section
+            +bold
+            &:not(:last-child)
+                margin-right: 10px
+    &-tools
+        grid-row: 3 / 5
+        display: flex
+        flex-direction: column
+        max-height: 370px
+        &__image
+            border-radius: 10px 10px 0 0
+            height: 275px
+        &__title
+            font-family: 'Roboto Slab', serif
+            font-size: 16px
+            line-height: 25px
+            color: $bg-section
+            margin: 0
+            padding: 15px 52px 30px 25px
+    &-repeat
+        max-height: 170px
+        padding: 25px 25px 30px 25px
+        &__title
+            margin: 0
+            margin-bottom: 5px
+            font-family: 'Roboto Slab', serif
+            font-size: 16px
+            line-height: 25px
+            color: $bg-section
+        &__text
+            display: inline-block
+            margin-bottom: 8px
+            font-size: 14px
+            line-height: 20px
+            color: $tabs-text-color
+        &__data
+            font-size: 12px
+            line-height: 15px
+            color: $input-text
+    &-customer
+        &__text
+            margin-bottom: 28px
+    &-social
+        height: 170px
+        padding: 30px 25px 40px 25px
+        &__title
+            margin: 0
+            font-family: 'Roboto Slab', serif
+            font-size: 20px
+            line-height: 25px
+            color: $bg-section
+            text-align: center
+            margin-bottom: 25px
+        &__block
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 0px 12px
+        &__icon
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            &--facebook
+                background-color: $facebook-bg
+            &--twitter
+                background-color: $twitter-bg
+            &--youtube
+                background-color: $youtube-bg

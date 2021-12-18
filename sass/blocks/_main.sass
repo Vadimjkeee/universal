@@ -1,0 +1,88 @@
+.main
+    height: 590px
+    background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url(../img/main/main-bg.png) 100% 55% no-repeat
+    background-size: cover
+    padding-top: 60px
+    padding-bottom: 72px
+    color: $white-text
+    &--second
+        background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url(../img/news/news-5.png) 100% 55% no-repeat
+        background-size: cover
+    &-block
+        display: flex
+        flex-direction: column
+        justify-content: center
+        &__nav
+            display: flex
+            justify-content: space-between
+            margin-left: 97px
+            margin-right: 96px
+            margin-bottom: 50px
+        &__theme
+            display: inline-block
+            margin-top: 2px
+            font-size: 12px
+            line-height: 15px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            color: $btn-color
+            +bold
+        &__btn
+            display: flex
+            justify-content: flex-end
+            align-items: center
+        &__link
+            display: flex
+            align-items: center
+            text-decoration: none
+            color: inherit
+            font-size: 14px
+            line-height: 20px
+        &__button
+            display: inline-block
+            &--main
+                margin-left: 6px
+                margin-right: 32px
+            &--prev
+                margin-left: 8px
+                margin-right: 20px
+            &--next
+                margin-right: 8px
+        &__text
+            position: relative
+        &__note
+            position: absolute
+            top: 21px
+            left: 0
+            cursor: pointer
+            width: 21px
+            height: 27px
+        &__info
+            padding-left: 97px
+            max-width: 835px
+        &__title
+            margin-top: 0
+            margin-bottom: 30px
+            font-family: 'Roboto Slab', serif
+            font-size: 55px
+            line-height: 70px
+        &__description
+            margin-top: 0
+            font-size: 18px
+            line-height: 30px
+            opacity: 0.85
+            max-width: 650px
+            margin-bottom: 43px
+        &__stats
+            font-size: 12px
+            line-height: 15px
+            opacity: 0.85
+            display: flex
+            align-items: center
+        &__data
+            display: inline-block
+            margin-left: 5.75px
+            margin-right: 21px
+        &__number
+            margin-left: 6px
+            margin-right: 20px

@@ -1,0 +1,140 @@
+.footer
+    padding: 62px 0 55px 0
+    background-color: $white-text
+    &__title
+        margin-top: 0
+        margin-bottom: 22px
+        font-family: 'Roboto Slab', serif
+        font-size: 40px
+        line-height: 50px
+        text-align: center
+        color: $bg-section
+    &__form
+        max-width: 460px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 70px
+    &__input
+        width: 100%
+        border: 1px solid $tabs-border-color
+        border-radius: 5px
+        padding: 10px 15px 10px 15px
+        font-size: 14px
+        line-height: 20px
+        color: $input-text
+        outline: 0
+        &-group
+            margin-right: 10px
+            flex-grow: 1
+            font-size: 14px
+            line-height: 12px
+    &__button
+        align-self: start
+        background-color: $btn-color
+        border: none
+        color: $white-text
+        border-radius: 20px
+        padding: 10px 25px
+        font-size: 14px
+        line-height: 20px
+        +bold
+    &-links
+        padding-bottom: 47px
+        border-bottom: 1px solid $tabs-border-color
+        display: flex
+        flex-wrap: wrap
+        &__block
+            padding-top: 30px
+            width: 195px
+        &__new
+            border-top: 5px solid $active-news
+        &__articles
+            border-top: 5px solid $purple
+        &__movie
+            border-top: 5px solid $btn-color
+        &__course
+            border-top: 5px solid $orange
+        &__information
+            border-top: 5px solid $green-btn
+        &__categories
+            border-top: 5px solid $greyblue
+            width: 165px
+        &__title
+            margin-top: 0
+            margin-bottom: 25px
+            font-size: 14px
+            line-height: 20px
+            color: $bg-section
+            +bold
+        &__list
+            list-style: none
+            margin: 0
+            padding: 0
+            font-size: 14px
+            line-height: 20px
+            color: $tabs-text-color
+        &__item
+            margin-bottom: 12px
+        &__link
+            color: inherit
+            display: inline-block
+    &-social
+        padding-top: 30px
+        padding-bottom: 26px
+        border-bottom: 1px solid $tabs-border-color
+        display: flex
+        align-items: center
+        &__image
+            flex-shrink: 0
+        &__logo
+            width: 50px
+            height: 50px
+        &__about
+            display: flex
+            align-items: center
+            margin-left: 30px
+            margin-right: 360px
+        &__block
+            display: flex
+            justify-content: space-between
+        &__item
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            color: $bg-section
+            margin-right: 30px
+            +bold
+        &__links
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__icon
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            &:not(:last-child)
+                margin-right: 15px
+            &--facebook
+                background-color: $facebook-bg
+            &--twitter
+                background-color: $twitter-bg
+            &--youtube
+                background-color: $youtube-bg
+            &--instagram
+                background-color: $instagram-bg
+    &-bottom
+        padding-top: 40px
+        display: flex
+        justify-content: space-between
+        font-size: 14px
+        line-height: 20px
+        color: $input-text
+        &__text
+            max-width: 760px

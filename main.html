@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal - Blog</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar navbar__mobile_fixed">
+        <div class="container">
+            <div class="navbar-block">
+                <div class="navbar-logo">
+                    <a href="./main.html" class="navbar-logo__icon">
+                        <img src="img/header/logo.svg" alt="Logo: Universal" class="navbar-logo__image">
+                    </a>
+                    <a href="./main.html" class="navbar-logo__text">Universal</a>
+                </div>
+                <!-- /.navbar__logo -->
+
+                <ul class="navbar-menu">
+                    <li class="navbar-menu__item">
+                        <a href="#articles" class="navbar-menu__link">Статьи</a>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <a href="#news" class="navbar-menu__link">Новости</a>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <a href="#course" class="navbar-menu__link">Курсы</a>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <a href="#course" class="navbar-menu__link">HTML</a>
+                    </li>         
+                    <li class="navbar-menu__item">
+                        <a href="#course" class="navbar-menu__link">CSS</a>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <a href="#course" class="navbar-menu__link">JavaScript</a>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <a href="#course" class="navbar-menu__link">Web Design</a>
+                    </li>
+                </ul>
+
+                <form action="#" class="search navbar__search">
+                    <input type="text" class="search__input" placeholder="Поиск" required minlength="2">
+                    <button class="search__button">
+                        <img src="img/header/Search.png" alt="Иконка поиска">
+                    </button>
+                </form>
+                <!-- /.navbar__search -->
+                <button class="menu-button navbar-block__menu-button">
+                    <span class="menu-button__line"></span>
+                    <span class="menu-button__line"></span>
+                    <span class="menu-button__line"></span>
+                </button>
+            </div>
+            <!-- /.navbar-block -->
+            <div class="navbar-recede">
+            </div>
+            <!-- /.navbar-recede -->
+            <nav class="navbar-bottom">
+                <div class="container">
+                    <ul class="navbar-menu navbar-menu--mobile-visible">
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <form action="#" class="search navbar__search navbar__search--mobile-visible">
+                                <input type="text" class="search__input" placeholder="Поиск" required minlength="2">
+                                <button class="search__button">
+                                    <img src="img/header/Search.png" alt="Иконка поиска">
+                                </button>
+                            </form>
+                            <!-- /.navbar__search -->
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#articles" class="navbar-menu__link">Статьи</a>
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#news" class="navbar-menu__link">Новости</a>
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#course" class="navbar-menu__link">Курсы</a>
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#course" class="navbar-menu__link">HTML</a>
+                        </li>         
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#course" class="navbar-menu__link">CSS</a>
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#course" class="navbar-menu__link">JavaScript</a>
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#course" class="navbar-menu__link">Web Design</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- /.navbar-bottom  -->
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.navbar -->
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-block">
+                <div class="hero-slider">
+                    <div class="hero-slider__item hero-slider__item--active">
+                        <img src="img/hero/slide-1.jpg" alt="Фотография для слайдера" class="hero-slider__image">
+                        <div class="hero-slider__description">
+                            <a href="#" class="hero-slider__user user">
+                                <img src="img/hero/avatar.png" alt="Аватарка пользователя" class="user__avatar">
+                                <div class="user__info">
+                                    <span class="user__name">Давид Гуров</span>
+                                    <span class="user__profession">Разработчик</span>
+                                </div>
+                            </a>
+                            <span class="hero-slider__language">JavaScript</span>
+                            <h1 class="hero-slider__title">Расширение Chrome защищает от атак</h1>
+                            <a href="article.html" class="button hero-slider__button hover-button">
+                                <span>Читать далее</span> 
+                                <img src="img/Arrow.png" alt="Стрелка вправо" class="hero-slider__arrow">
+                            </a>
+                        </div>
+                        <!-- /.hero-slider__description -->
+                    </div>
+                    <!-- /.hero-slider__item -->
+                    <div class="hero-slider__item">
+                        <img src="img/hero/slide-2.jpg" alt="Фотография для слайдера" class="hero-slider__image">
+                        <div class="hero-slider__description">
+                            <a href="#" class="hero-slider__user user">
+                                <img src="img/hero/avatar.png" alt="Аватарка пользователя" class="user__avatar">
+                                <div class="user__info">
+                                    <span class="user__name">Давид Гуров</span>
+                                    <span class="user__profession">Разработчик</span>
+                                </div>
+                            </a>
+                            <span class="hero-slider__language">JavaScript</span>
+                            <h1 class="hero-slider__title">Расширение Chrome защищает от атак</h1>
+                            <a href="article.html" class="button hero-slider__button">
+                                <span>Читать далее</span> 
+                                <img src="img/Arrow.png" alt="Стрелка вправо" class="hero-slider__arrow">
+                            </a>
+                        </div>
+                        <!-- /.hero-slider__description -->
+                    </div>
+                    <!-- /.hero-slider__item -->
+                    <div class="hero-slider__item">
+                        <img src="img/hero/slide-3.jpg" alt="Фотография для слайдера" class="hero-slider__image">
+                        <div class="hero-slider__description">
+                            <a href="#" class="hero-slider__user user">
+                                <img src="img/hero/avatar.png" alt="Аватарка пользователя" class="user__avatar">
+                                <div class="user__info">
+                                    <span class="user__name">Давид Гуров</span>
+                                    <span class="user__profession">Разработчик</span>
+                                </div>
+                            </a>
+                            <span class="hero-slider__language">JavaScript</span>
+                            <h1 class="hero-slider__title">Расширение Chrome защищает от атак</h1>
+                            <a href="article.html" class="button hero-slider__button">
+                                <span>Читать далее</span> 
+                                <img src="img/Arrow.png" alt="Стрелка вправо" class="hero-slider__arrow">
+                            </a>
+                        </div>
+                        <!-- /.hero-slider__description -->
+                    </div>
+                    <!-- /.hero-slider__item -->
+                    <div class="hero-slider__item">
+                        <img src="img/hero/slide-4.jpg" alt="Фотография для слайдера" class="hero-slider__image">
+                        <div class="hero-slider__description">
+                            <a href="#" class="hero-slider__user user">
+                                <img src="img/hero/avatar.png" alt="Аватарка пользователя" class="user__avatar">
+                                <div class="user__info">
+                                    <span class="user__name">Давид Гуров</span>
+                                    <span class="user__profession">Разработчик</span>
+                                </div>
+                            </a>
+                            <span class="hero-slider__language">JavaScript</span>
+                            <h1 class="hero-slider__title">Расширение Chrome защищает от атак</h1>
+                            <a href="article.html" class="button hero-slider__button">
+                                <span>Читать далее</span> 
+                                <img src="img/Arrow.png" alt="Стрелка вправо" class="hero-slider__arrow">
+                            </a>
+                        </div>
+                        <!-- /.hero-slider__description -->
+                    </div>
+                    <!-- /.hero-slider__item -->
+                    <div class="hero-slider__item">
+                        <img src="img/hero/slide-5.jpg" alt="Фотография для слайдера" class="hero-slider__image">
+                        <div class="hero-slider__description">
+                            <a href="#" class="hero-slider__user user">
+                                <img src="img/hero/avatar.png" alt="Аватарка пользователя" class="user__avatar">
+                                <div class="user__info">
+                                    <span class="user__name">Давид Гуров</span>
+                                    <span class="user__profession">Разработчик</span>
+                                </div>
+                            </a>
+                            <span class="hero-slider__language">JavaScript</span>
+                            <h1 class="hero-slider__title">Расширение Chrome защищает от атак</h1>
+                            <a href="article.html" class="button hero-slider__button">
+                                <span>Читать далее</span> 
+                                <img src="img/Arrow.png" alt="Стрелка вправо" class="hero-slider__arrow">
+                            </a>
+                        </div>
+                        <!-- /.hero-slider__description -->
+                    </div>
+                    <!-- /.hero-slider__item -->
+                </div>
+                <!-- /.hero-slider -->
+                <div class="hero-tabs">
+                    <h2 class="hero-tabs__title">Рекомендуем</h2>
+                    <a class="hero-tabs__item hero-tabs__item--active">
+                        <h3 class="hero-tabs__thing hero-tabs__thing--bluegreen">CSS</h3>
+                        <!-- /.hero-tabs__thing -->
+                        <span class="hero-tabs__info">
+                            Как использовать CSS float после того, как вышел Flexbox
+                        </span> 
+                        <!-- /.hero-tabs__info -->
+                    </a>
+                    <a class="hero-tabs__item">
+                        <h3 class="hero-tabs__thing hero-tabs__thing--greyblue">javascript</h3>
+                        <!-- /.hero-tabs__thing -->
+                        <span class="hero-tabs__info">
+                            На каком стандарте писать скрипты, если я фрилансер
+                        </span> 
+                        <!-- /.hero-tabs__info -->
+                    </a>
+                    <a class="hero-tabs__item">
+                        <h3 class="hero-tabs__thing hero-tabs__thing--purple">html</h3>
+                        <!-- /.hero-tabs__thing -->
+                        <span class="hero-tabs__info">
+                            Правильно вставляем картинку на сайт для Retina дисплея
+                        </span> 
+                        <!-- /.hero-tabs__info -->
+                    </a>
+                    <a class="hero-tabs__item hero-tabs__item--orange">
+                        <h3 class="hero-tabs__thing hero-tabs__thing--orange">Web design</h3>
+                        <!-- /.hero-tabs__thing -->
+                        <span class="hero-tabs__info">
+                            ТОП-10 плагинов для Figma
+                        </span> 
+                        <!-- /.hero-tabs__info -->
+                    </a>
+                    <a class="hero-tabs__item">
+                        <h3 class="hero-tabs__thing hero-tabs__thing--bluegreen">CSS</h3>
+                        <!-- /.hero-tabs__thing -->
+                        <span class="hero-tabs__info">
+                            Возможности CSS Grid Layout , которые уже можно применять
+                        </span> 
+                        <!-- /.hero-tabs__info -->
+                    </a>
+                </div>
+                <!-- /.hero-tabs -->
+            </div>
+            <!-- /.hero-block -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.hero -->
+
+    <section class="popular">
+        <div class="container">
+            <div class="popular-block">
+                <div class="popular-block__item">
+                    <a href="#" class="popular-block__link">
+                        <h2 class="popular-block__info">25 способов <br> настроить слайдер </h2> 
+                        <!-- /.popular-block__info -->
+                        <img src="img/popular/popular-img-1.png" alt="Фотография" class="popular-block__image">
+                    </a> 
+                    <!-- /.popular-block__link -->
+                </div>
+                <div class="popular-block__item">
+                    <a href="#" class="popular-block__link">
+                        <h2 class="popular-block__info">Главные фишки фрилансера</h2> 
+                        <!-- /.popular-block__info -->
+                        <img src="img/popular/popular-img-2.png" alt="Фотография" class="popular-block__image">
+                    </a> 
+                    <!-- /.popular-block__link -->
+                </div>
+                <div class="popular-block__item">
+                    <a href="#" class="popular-block__link">
+                        <h2 class="popular-block__info">Техника управлеия  временем “Помодоро”</h2> 
+                        <!-- /.popular-block__info -->
+                        <img src="img/popular/popular-img-3.png" alt="Фотография" class="popular-block__image">
+                    </a> 
+                    <!-- /.popular-block__link -->
+                </div>
+                <div class="popular-block__item">
+                    <a href="#" class="popular-block__link">
+                        <h2 class="popular-block__info">Что нужно знать о Git и GitHub</h2> 
+                        <!-- /.popular-block__info -->
+                        <img src="img/popular/popular-img-4.png" alt="Фотография" class="popular-block__image">
+                    </a> 
+                    <!-- /.popular-block__link -->
+                </div>
+            </div>
+            <!-- /.popular-block -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.popular -->
+
+    <section class="articles" id="articles">
+        <div class="container">
+            <div class="articles-block">
+                <a href="article.html" class="articles-block__item articles-work">
+                    <div class="articles-work__wrapper">
+                        <span class="articles-work__subtitle">Статьи</span>
+                        <h2 class="articles-work__title">Вам предложили работу мечты, но вы не можете... </h2>
+                        <p class="articles-work__text">Как поступить, если хочется пойти на работу мечты, но она находится в другом городе. У вас семья и переезжать вы не готовы.</p>
+                    </div>
+                    <!-- /.articles-work__wrapper -->
+                    <div class="articles-work__comment">
+                        <img src="img/articles/avatar.png" alt="Аватарка" class="articles-work__avatar">
+                        <span class="articles-work__name">Инна Квашова:</span>
+                        <span class="articles-work__com">Каждый разработчик мечтает переехать в...</span>
+                        <img src="img/articles/Comment-work.svg" alt="иконка комментария" class="articles-work__icon">
+                        <span class="articles-work__number">342</span>
+                    </div>
+                    <!-- /.articles-work__comment -->
+                </a>
+                <!-- /.articles-work -->
+                <a href="article.html" class="articles-block__item articles-project">
+                    <img src="img/articles/project.png" alt="фотоновое изображение" class="articles-project__image">
+                    <div class="articles-project__wrapper">
+                        <span class="button articles-project__popular">Популярное</span>
+                        <span class="articles-project__theme">Web design</span>
+                        <h2 class="articles-project__title">Где взять реальные проекты для портфолио</h2>
+                        <div class="articles-project__profile">
+                            <img src="img/articles/avatar.png" alt="аватар" class="articles-project__avatar">
+                            <div class="articles-project__info">
+                                <span class="articles-project__name">Сара Женникова</span>
+                                <!-- /.articles-project__name -->
+                                <div class="articles-project__stats">
+                                    <span class="articles-project__data">25 сентября</span>
+                                    <img src="img/articles/Comment.svg" alt="иконка комментария" class="articles-project__icon">
+                                    <span class="articles-project__number">16</span>
+                                    <img src="img/articles/Heart.svg" alt="иконка сердца" class="articles-project__heart">
+                                    <span class="articles-project__number">832</span>
+                                </div>
+                                <!-- /.articles-project__stats -->
+                            </div>
+                            <!-- /.articles-project__info -->
+                        </div>
+                        <!-- /.articles-project__profile -->
+                    </div>
+                    <!-- /.articles-check__wrapper -->
+                </a>
+                <!-- /.articles-project -->
+                <div class="articles-block__item articles-check">
+                    <div class="articles-check__block">
+                        <div class="articles-check__wrapper">
+                            <h2 class="articles-check__title">Чек-лист сдачи верстки вашему заказчику</h2>
+                            <span class="articles-check__format">PDF, 125 Мб</span>
+                        </div>
+                        <!-- /.articles-check__wrapper -->
+                    </div>
+                    <!-- /.articles-check__block -->
+                    <a href="#" class="articles-check__download">
+                        <img src="img/articles/Download.svg" alt="иконка: скачать" class="articles-check__icon">
+                        <span class="articles-check__text">Скачать</span>
+                    </a>
+                </div>
+                <!-- /.articles-check -->
+                <div class="articles-block__item articles-tag">
+                    <h2 class="articles-tag__title">Тэги</h2>
+                    <div class="articles-tag__block">
+                        <a href="article.html" class="button articles-tag__button">Forest</a>
+                        <a href="article.html" class="button articles-tag__button">Hover tag</a>
+                        <a href="article.html" class="button articles-tag__button">Nature</a>
+                        <a href="article.html" class="button articles-tag__button">Recreation</a>
+                        <a href="article.html" class="button articles-tag__button">Tent</a>
+                        <a href="article.html" class="button articles-tag__button">Fresh air</a>
+                        <a href="article.html" class="button articles-tag__button">Summer</a>
+                        <a href="article.html" class="button articles-tag__button">Mountains</a>
+                        <a href="article.html" class="button articles-tag__button">Wood</a>
+                        <a href="article.html" class="button articles-tag__button">Map</a>
+                        <a href="article.html" class="button articles-tag__button">Sun</a>
+                        <a href="article.html" class="button articles-tag__button">Wild animals</a>
+                        <a href="article.html" class="button articles-tag__button">Night</a>
+                    </div>
+                    <!-- /.articles-tag__block -->
+                </div>
+                <!-- /.articles-tag -->
+                <a href="article.html" class="articles-block__item articles-tools">
+                    <img src="img/articles/tools.png" alt="Фотография ноутбука" class="articles-tools__image">
+                    <h2 class="articles-tools__title">20+ инструментов для js-разработчика</h2>
+                    <!-- /.articles-tools__title -->
+                </a>
+                <!-- /.articles-tools -->
+                <a href="article.html" class="articles-block__item articles-references articles-repeat">
+                    <h2 class="articles-repeat__title">Удачные референсы</h2>
+                    <span class="articles-repeat__text">Как выбрать подходящие исходники, если вы ищите идею для интерфейса</span>
+                    <span class="articles-repeat__data">15 октября</span>
+                </a>
+                <!-- /.articles-references -->
+                <a href="article.html" class="articles-block__item articles-customer articles-repeat">
+                    <h2 class="articles-repeat__title">Заказчики — мудаки?</h2>
+                    <span class="articles-repeat__text articles-customer__text">Как защититься от бесконечных правок на этапе сдачи проекта</span>
+                    <span class="articles-repeat__data">20 октября</span>
+                </a>
+                <!-- /.articles-customer -->
+                <a href="article.html" class="articles-block__item articles-stress articles-repeat">
+                    <h2 class="articles-repeat__title">Работа без стресса — это...</h2>
+                    <span class="articles-repeat__text">Обустройте свое рабочее место так, чтобы не испытывать раздражение от скрипучего... </span>
+                    <span class="articles-repeat__data">26 октября</span>
+                </a>
+                <!-- /.articles-stress -->
+                <a href="article.html" class="articles-block__item articles-free articles-repeat">
+                    <h2 class="articles-repeat__title">Бесплатные методы...</h2>
+                    <span class="articles-repeat__text">Как не платить за софт, если у вас есть студенческий билет высшего учебного заведения</span>
+                    <span class="articles-repeat__data">13 октября</span>
+                </a>
+                <!-- /.articles-free -->
+                <div class="articles-block__item articles-social">
+                    <h2 class="articles-social__title">Наши соцсети</h2>
+                    <div class="articles-social__block">
+                        <a href="https://facebook.com" target="_blank" class="articles-social__icon articles-social__icon--facebook">
+                            <img src="img/articles/Facebook.svg" alt="иконка facebook">
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="articles-social__icon articles-social__icon--twitter">
+                            <img src="img/articles/Twitter.svg" alt="иконка twitter">
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="articles-social__icon articles-social__icon--youtube">
+                            <img src="img/articles/YouTube.svg" alt="иконка youtube">
+                        </a>
+                    </div>
+                </div>
+                <!-- /.articles-social -->
+            </div>
+            <!-- /.articles-block -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.articles -->
+
+    <section class="investigation">
+        <div class="container">
+            <div class="investigation-block">
+                <h2 class="investigation__title">Расследование недели: сколько <br> зарабатывает веб разработчик в Москве</h2>
+                <!-- /.investigation__title -->
+                <a href="article.html" class="button investigation__button hover-button">
+                    <span>Читать статью</span> 
+                    <img src="img/Arrow.png" alt="Стрелка вправо" class="investigation__arrow">
+                </a>
+                <!-- /.button investigation__button -->
+            </div>
+            <!-- /.investigation-block -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.investigation -->
+
+    <section class="news" id="news">
+        <div class="container">
+            <div class="news-wrapper">
+                <div class="news-block">
+                    <div class="news-block__item news-block__item--first">
+                        <div class="news-block__border">
+                            <div class="news-block__img">
+                                <img src="img/news/news-1.png" alt="Превью фото" class="news-block__image">
+                            </div>
+                            <!-- /.news-block__img -->
+                            <div class="news-block__info">
+                                <img src="img/news/Bookmark.svg" alt="Иконка избранного" class="news-block__note">
+                                <span class="news-block__theme news-block__theme--blue">Новости</span>
+                                <a href="article.html" class="news-block__title">Новый налоговый режим для фрилансеров — налог на проф. доход</a>
+                                <p class="news-block__text">Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.</p>
+                                <div class="news-block__stats">
+                                    <span class="news-block__data">6 августа</span>
+                                    <img src="img/news/Comment.svg" alt="иконка комментария" class="news-block__comment">
+                                    <span class="news-block__number">342</span>
+                                    <img src="img/news/Heart.svg" alt="иконка сердца" class="news-block__heart">
+                                    <span class="news-block__number">830</span>
+                                </div>
+                                <!-- /.news-block__stats -->
+                            </div>
+                            <!-- /.new-block__info -->
+                        </div>
+                        <!-- /.news-block__border -->
+                    </div>
+                    <!-- /.news-block__item -->
+                    <div class="news-block__item">
+                        <div class="news-block__border">
+                            <div class="news-block__img">
+                                <img src="img/news/news-2.png" alt="Превью фото" class="news-block__image">
+                            </div>
+                            <!-- /.news-block__img -->
+                            <div class="news-block__info">
+                                <img src="img/news/Bookmark-red.svg" alt="Иконка избранного" class="news-block__note news-block__note--active">
+                                <span class="news-block__theme news-block__theme--bluegreen">Мнения</span>
+                                <a href="article.html" class="news-block__title">Платные курсы — это не быстрый способ выйти на нужный уровень</a>
+                                <p class="news-block__text">Среди новичков распространено мнение, что если пройти <br> какой-то крутой онлайн-курс, то это решит все проблемы. Но они не берут в расчет, что лучшее обучение — это практика.</p>
+                                <div class="news-block__stats">
+                                    <span class="news-block__data">7 октября</span>
+                                    <img src="img/news/Comment.svg" alt="иконка комментария" class="news-block__comment">
+                                    <span class="news-block__number">27</span>
+                                    <img src="img/news/Heart.svg" alt="иконка сердца" class="news-block__heart">
+                                    <span class="news-block__number">129</span>
+                                </div>
+                                <!-- /.news-block__stats -->
+                            </div>
+                            <!-- /.new-block__info -->
+                        </div>
+                        <!-- /.news-block__border -->
+                    </div>
+                    <!-- /.news-block__item -->
+                    <div class="news-block__item">
+                        <div class="news-block__border">
+                            <div class="news-block__img">
+                                <img src="img/news/news-3.png" alt="Превью фото" class="news-block__image">
+                            </div>
+                            <!-- /.news-block__img -->
+                            <div class="news-block__info">
+                                <img src="img/news/Bookmark.svg" alt="Иконка избранного" class="news-block__note">
+                                <span class="news-block__theme news-block__theme--red">Горячее</span>
+                                <a href="article.html" class="news-block__title">Из-за ограничений стали недоступны серверы Telegram. К чему это может...</a>
+                                <p class="news-block__text">Сегодня мы узнали, что серверы Telegram не доступны на территории России. Разобрались, чем это грозит вам, если ваш бизнес зависит от этого мессенджера.</p>
+                                <div class="news-block__stats">
+                                    <span class="news-block__data">12 декабря</span>
+                                    <img src="img/news/Comment.svg" alt="иконка комментария" class="news-block__comment">
+                                    <span class="news-block__number">30</span>
+                                    <img src="img/news/Heart.svg" alt="иконка сердца" class="news-block__heart">
+                                    <span class="news-block__number">284</span>
+                                </div>
+                                <!-- /.news-block__stats -->
+                            </div>
+                            <!-- /.new-block__info -->
+                        </div>
+                        <!-- /.news-block__border -->
+                    </div>
+                    <!-- /.news-block__item -->
+                    <div class="news-block__item">
+                        <div class="news-block__border">
+                            <div class="news-block__img">
+                                <img src="img/news/news-4.png" alt="Превью фото" class="news-block__image">
+                            </div>
+                            <!-- /.news-block__img -->
+                            <div class="news-block__info">
+                                <img src="img/news/Bookmark.svg" alt="Иконка избранного" class="news-block__note">
+                                <span class="news-block__theme news-block__theme--bluegreen">Мнения</span>
+                                <a href="article.html" class="news-block__title">В вашем портфолио могут быть фейковые проекты, если вы сделали...</a>
+                                <p class="news-block__text">Один из читателей предположил, что если в портфолио положить несуществующий проект, то ничего страшного не произойдет. Он провел эксперимент и потенциальные заказчики...</p>
+                                <div class="news-block__stats">
+                                    <span class="news-block__data">20 июля</span>
+                                    <img src="img/news/Comment.svg" alt="иконка комментария" class="news-block__comment">
+                                    <span class="news-block__number">102</span>
+                                    <img src="img/news/Heart.svg" alt="иконка сердца" class="news-block__heart">
+                                    <span class="news-block__number">1,293</span>
+                                </div>
+                                <!-- /.news-block__stats -->
+                            </div>
+                            <!-- /.new-block__info -->
+
+                        </div>
+                        <!-- /.news-block__border -->
+                    </div>
+                    <!-- /.news-block__item -->
+                    <div class="news-block__item">
+                        <div class="news-block__border">
+                            <div class="news-block__img">
+                                <img src="img/news/news-5.png" alt="Превью фото" class="news-block__image">
+                            </div>
+                            <!-- /.news-block__img -->
+                            <div class="news-block__info">
+                                <img src="img/news/Bookmark.svg" alt="Иконка избранного" class="news-block__note">
+                                <span class="news-block__theme news-block__theme--red">Горячее</span>
+                                <a href="article.html" class="news-block__title news-block__title--mt">Список стран, куда можно улететь</a>
+                                <p class="news-block__text news-block__text--mt">Если вы приняли решение переехать в другую страну, чтобы найти там работу, сначала посмотрите на список стран, который мы подготовили для вас. Внутри важная информация про...</p>
+                                <div class="news-block__stats">
+                                    <span class="news-block__data">22 октября</span>
+                                    <img src="img/news/Comment.svg" alt="иконка комментария" class="news-block__comment">
+                                    <span class="news-block__number">5</span>
+                                    <img src="img/news/Heart.svg" alt="иконка сердца" class="news-block__heart">
+                                    <span class="news-block__number">82</span>
+                                </div>
+                                <!-- /.news-block__stats -->
+                            </div>
+                            <!-- /.new-block__info -->
+                        </div>
+                        <!-- /.news-block__border -->
+                    </div>
+                    <!-- /.news-block__item -->
+                    <div class="news-block__item news-block__item--last">
+                        <div class="news-block__border news-block__border--last">
+                            <div class="news-block__img">
+                                <img src="img/news/news-6.png" alt="Превью фото" class="news-block__image">
+                            </div>
+                            <!-- /.news-block__img -->
+                            <div class="news-block__info">
+                                <img src="img/news/Bookmark.svg" alt="Иконка избранного" class="news-block__note">
+                                <span class="news-block__theme news-block__theme--purple">Подборки</span>
+                                <a href="article.html" class="news-block__title">Список Youtube каналов для тех, кто только начинает изучать разработку</a>
+                                <p class="news-block__text">Мы собрали на одной странице кучу ссылок на полезные русскоязычные каналы, посвященные айти. Тут можно найти видеоуроки, лекции и бесплатные курсы.</p>
+                                <div class="news-block__stats">
+                                    <span class="news-block__data">26 октября</span>
+                                    <img src="img/news/Comment.svg" alt="иконка комментария" class="news-block__comment">
+                                    <span class="news-block__number">101</span>
+                                    <img src="img/news/Heart.svg" alt="иконка сердца" class="news-block__heart">
+                                    <span class="news-block__number">432</span>
+                                </div>
+                                <!-- /.news-block__stats -->
+                            </div>
+                            <!-- /.new-block__info -->                    
+                        </div>
+                        <!-- /.news-block__border -->
+                    </div>
+                    <!-- /.news-block__item -->
+                </div>
+                <!-- /.news-block -->
+                <div class="news-published">
+                    <h2 class="news-published__title">Недавно опубликовано</h2>
+                    <div class="news-published__block">
+                        <a href="article.html" class="news-published__item">
+                            <img src="img/news/published-1.png" alt="публикация" class="news-published__img">
+                            <div class="news-published__info">
+                                <span class="news-published__subtitle">Работа на удаленке, как это теперь</span>
+                                <span class="news-published__time">15 минут назад</span>
+                                <span class="news-published__count">1</span>
+                            </div>
+                            <!-- /.news-published__info -->
+                        </a>
+                        <!-- /.news-published__item -->
+                    </div>
+                    <!-- /.news-published__item -->
+                    <div class="news-published__block">
+                        <a href="article.html" class="news-published__item">
+                            <img src="img/news/published-2.png" alt="публикация" class="news-published__img">
+                            <div class="news-published__info">
+                                <span class="news-published__subtitle">Для чего нужен Node.js и с чем...</span>
+                                <span class="news-published__time">32 минуты назад</span>
+                                <span class="news-published__count">2</span>
+                            </div>
+                            <!-- /.news-published__info -->
+                        </a>
+                        <!-- /.news-published__item -->
+                    </div>
+                    <!-- /.news-published__item -->
+                    <div class="news-published__block">
+                        <a href="article.html" class="news-published__item">
+                            <img src="img/news/published-3.png" alt="публикация" class="news-published__img">
+                            <div class="news-published__info">
+                                <span class="news-published__subtitle">Работа в Google: собеседования и...</span>
+                                <span class="news-published__time">38 минут назад</span>
+                                <span class="news-published__count">3</span>
+                            </div>
+                            <!-- /.news-published__info -->
+                        </a>
+                        <!-- /.news-published__item -->
+                    </div>
+                    <!-- /.news-published__item -->
+                    <div class="news-published__block">
+                        <a href="article.html" class="news-published__item">
+                            <img src="img/news/published-4.png" alt="публикация" class="news-published__img">
+                            <div class="news-published__info">
+                                <span class="news-published__subtitle">Переезд в Нью Йорк для работы по...</span>
+                                <span class="news-published__time">53 минуты назад</span>
+                                <span class="news-published__count">4</span>
+                            </div>
+                            <!-- /.news-published__info -->
+                        </a>
+                        <!-- /.news-published__item -->
+                    </div>
+                    <!-- /.news-published__item -->
+                    <div class="news-published__block">
+                        <a href="article.html" class="news-published__item">
+                            <img src="img/news/published-5.png" alt="публикация" class="news-published__img">
+                            <div class="news-published__info">
+                                <span class="news-published__subtitle">Почему родители против того, чтобы...</span>
+                                <span class="news-published__time">1 час назад</span>
+                                <span class="news-published__count">5</span>
+                            </div>
+                            <!-- /.news-published__info -->
+                        </a>
+                        <!-- /.news-published__item -->
+                    </div>
+                    <!-- /.news-published__item -->
+                    <div class="news-published__block">
+                        <a href="article.html" class="news-published__item">
+                            <img src="img/news/published-6.png" alt="публикация" class="news-published__img">
+                            <div class="news-published__info">
+                                <span class="news-published__subtitle">Прокрастинация:  побороть отклады...</span>
+                                <span class="news-published__time">1 час назад</span>
+                                <span class="news-published__count">6</span>
+                            </div>
+                            <!-- /.news-published__info -->
+                        </a>
+                        <!-- /.news-published__item -->
+                    </div>
+                    <!-- /.news-published__item -->
+                    <div class="news-published__block">
+                        <a href="article.html" class="news-published__item news-published__item--last">
+                            <img src="img/news/published-7.png" alt="публикация" class="news-published__img">
+                            <div class="news-published__info">
+                                <span class="news-published__subtitle">Правки от заказчика могут быть...</span>
+                                <span class="news-published__time">2 часа назад</span>
+                                <span class="news-published__count">7</span>
+                            </div>
+                            <!-- /.news-published__info -->
+                        </a>
+                        <!-- /.news-published__item -->
+                    </div>
+                    <!-- /.news-published__item -->
+                    <a href="article.html" class="news-published__more hover-button-white">Read more</a>
+                </div>
+                <!-- /.news-published -->
+            </div>
+            <!-- /.news-wrapper -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.news -->
+
+    <section class="lifehack" id="course">
+        <div class="container">
+            <div class="lifehack-wrapper">
+                <div class="lifehack-slider lifehack-wrapper__item">
+                    <div class="swiper-container lifehack-container">
+                        <div class="swiper-wrapper lifehack-slider__wrapper">
+                          <div class="swiper-slide lifehack-slider__slide">
+                            <img src="img/lifehack/slide-1.png" alt="фотография слайдера" class="lifehack-slider__image">
+                            <div class="lifehack-slider__info">
+                                <span class="lifehack-slider__theme">Горячее</span>
+                                <img src="img/lifehack/avatar.png" alt="аватар" class="lifehack-slider__avatar">
+                                <span class="lifehack-slider__name">Оксана Пушкина</span>
+                                <span class="lifehack-slider__profession">Фотограф</span>
+                                <h2 class="lifehack-slider__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                                <a href="article.html" class="button lifehack-slider__button hover-button">
+                                    <img src="img/lifehack/Images.png" alt="иконка фотографии" class="lifehack-slider__icon">
+                                    <span class="lifehack-slider__btn-text">Смотреть фото</span> 
+                                    <span class="lifehack-slider__number">26</span>
+                                </a>
+                            </div>
+                          </div>
+                          <!-- /.lifehack-slider__slide -->
+                          <div class="swiper-slide lifehack-slider__slide">
+                            <img src="img/lifehack/slide-2.png" alt="фотография слайдера" class="lifehack-slider__image">
+                            <div class="lifehack-slider__info">
+                                <span class="lifehack-slider__theme">Горячее</span>
+                                <img src="img/lifehack/avatar.png" alt="аватар" class="lifehack-slider__avatar">
+                                <span class="lifehack-slider__name">Оксана Пушкина</span>
+                                <span class="lifehack-slider__profession">Фотограф</span>
+                                <h2 class="lifehack-slider__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                                <a href="article.html" class="button lifehack-slider__button hover-button">
+                                    <img src="img/lifehack/Images.png" alt="иконка фотографии" class="lifehack-slider__icon">
+                                    <span class="lifehack-slider__btn-text">Смотреть фото</span> 
+                                    <span class="lifehack-slider__number">26</span>
+                                </a>
+                            </div>
+                          </div>
+                          <!-- /.lifehack-slider__slide -->
+                          <div class="swiper-slide lifehack-slider__slide">
+                            <img src="img/lifehack/slide-3.png" alt="фотография слайдера" class="lifehack-slider__image">
+                            <div class="lifehack-slider__info">
+                                <span class="lifehack-slider__theme">Горячее</span>
+                                <img src="img/lifehack/avatar.png" alt="аватар" class="lifehack-slider__avatar">
+                                <span class="lifehack-slider__name">Оксана Пушкина</span>
+                                <span class="lifehack-slider__profession">Фотограф</span>
+                                <h2 class="lifehack-slider__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                                <a href="article.html" class="button lifehack-slider__button hover-button">
+                                    <img src="img/lifehack/Images.png" alt="иконка фотографии" class="lifehack-slider__icon">
+                                    <span class="lifehack-slider__btn-text">Смотреть фото</span> 
+                                    <span class="lifehack-slider__number">26</span>
+                                </a>
+                            </div>
+                          </div>
+                          <!-- /.lifehack-slider__slide -->
+                          <div class="swiper-slide lifehack-slider__slide">
+                            <img src="img/lifehack/slide-4.png" alt="фотография слайдера" class="lifehack-slider__image">
+                            <div class="lifehack-slider__info">
+                                <span class="lifehack-slider__theme">Горячее</span>
+                                <img src="img/lifehack/avatar.png" alt="аватар" class="lifehack-slider__avatar">
+                                <span class="lifehack-slider__name">Оксана Пушкина</span>
+                                <span class="lifehack-slider__profession">Фотограф</span>
+                                <h2 class="lifehack-slider__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                                <a href="article.html" class="button lifehack-slider__button hover-button">
+                                    <img src="img/lifehack/Images.png" alt="иконка фотографии" class="lifehack-slider__icon">
+                                    <span class="lifehack-slider__btn-text">Смотреть фото</span> 
+                                    <span class="lifehack-slider__number">26</span>
+                                </a>
+                            </div>
+                          </div>
+                          <!-- /.lifehack-slider__slide -->
+                          <div class="swiper-slide lifehack-slider__slide">
+                            <img src="img/lifehack/slide-5.png" alt="фотография слайдера" class="lifehack-slider__image">
+                            <div class="lifehack-slider__info">
+                                <span class="lifehack-slider__theme">Горячее</span>
+                                <img src="img/lifehack/avatar.png" alt="аватар" class="lifehack-slider__avatar">
+                                <span class="lifehack-slider__name">Оксана Пушкина</span>
+                                <span class="lifehack-slider__profession">Фотограф</span>
+                                <h2 class="lifehack-slider__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                                <a href="article.html" class="button lifehack-slider__button hover-button">
+                                    <img src="img/lifehack/Images.png" alt="иконка фотографии" class="lifehack-slider__icon">
+                                    <span class="lifehack-slider__btn-text">Смотреть фото</span> 
+                                    <span class="lifehack-slider__number">26</span>
+                                </a>
+                            </div>
+                          </div>
+                          <!-- /.lifehack-slider__slide -->
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination lifehack-pagination"></div>
+                      </div>
+                </div>
+                <!-- /.lifehack__slider -->
+                <div class="lifehack__career lifehack-wrapper__item">
+                    <div class="lifehack__info">
+                        <span class="lifehack__theme">Карьера</span>
+                        <h2 class="lifehack__title">Вопросы на собеседовании для джуна</h2>
+                        <span class="lifehack__text">Каверзные и не очень вопросы, которых боятся новички, когда <br> идут на собеседование</span>
+                        <a href="article.html" class="button lifehack__button hover-button">
+                            <span>Читать далее</span> 
+                            <img src="img/Arrow.png" alt="Стрелка вправо" class="lifehack__arrow">
+                        </a>
+                    </div>
+                    <!-- /.lifehack__info -->
+                </div>
+                <!-- /.lifehack__career -->
+                <div class="lifehack__callisthenics lifehack-wrapper__item lifehack-same">
+                    <h2 class="lifehack-same__title">Зарядка для глаз</h2>
+                    <span class="lifehack-same__text">Эти несколько упражнений помогут сохранить зрение. Можно делать их даже если...</span>
+                    <span class="lifehack-same__data">15 октября</span>
+                </div>
+                <!-- /.lifehack__callisthenics -->
+                <div class="lifehack__plugins lifehack-wrapper__item lifehack-same">
+                    <h2 class="lifehack-same__title">Топ плагинов jQuery</h2>
+                    <span class="lifehack-same__text">Какие плагины помогут быстро создать галерею, выпадающие списки или окна</span>
+                    <span class="lifehack-same__data">14 октября</span>
+                </div>
+                <!-- /.lifehack__plugins -->
+            </div>
+            <!-- /.lifehack-wrapper -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.lifehack -->
+
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer__title">Подпишитесь на нашу рассылку</h2>
+            <!-- /.footer__title -->
+            <form action="send.php" method="POST" class="form footer__form">
+                <div class="footer__input-group">
+                    <input type="email" class="footer__input" required placeholder="Email" name="email">
+                </div>
+                <!-- /.footer__input-group -->
+                <button class="button footer__button hover-button">Подписаться</button>
+            </form>
+            <!-- /.form footer__form -->
+            <div class="footer-links">
+                <div class="footer-links__new footer-links__block">
+                    <h3 class="footer-links__title">Новости</h3>
+                    <ul class="footer-links__list">
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Обновления</a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Экспресс</a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Politics</a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Solar Eclipse</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.footer-links__new -->
+                <div class="footer-links__articles footer-links__block">
+                    <h3 class="footer-links__title">Статьи</h3>
+                    <ul class="footer-links__list">
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">HTML</a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">CSS</a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">JavaScript</a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Web Design</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.footer-links__articles -->
+                <div class="footer-links__movie footer-links__block">
+                    <h3 class="footer-links__title">Видеоуроки</h3>
+                    <ul class="footer-links__list">
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Скринкасты</a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Уроки</a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Вебинары</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.footer-links__movie -->
+                <div class="footer-links__course footer-links__block">
+                    <h3 class="footer-links__title">Курсы</h3>
+                    <ul class="footer-links__list">
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Платные интенсивы</a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Бесплатные стримы</a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Мастер-классы</a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Менторство</a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Буткемпы</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.footer-links__course -->
+                <div class="footer-links__information footer-links__block">
+                    <h3 class="footer-links__title">Информация</h3>
+                    <ul class="footer-links__list">
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Политика данных</a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Оферта сайта</a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Реквизиты</a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.footer-links__information -->
+                <div class="footer-links__categories footer-links__block">
+                    <h3 class="footer-links__title">Категории</h3>
+                    <ul class="footer-links__list">
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Популярное</a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Горячее</a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Подборки</a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Мнения</a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="#" class="footer-links__link">Карьера</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.footer-links__categories -->
+            </div>
+            <!-- /.footer-links -->
+            <div class="footer-social">
+                <a href="#" class="footer-social__image">
+                    <img src="img/Symbol.svg" alt="логотип" class="footer-social__logo">
+                </a>
+                <div class="footer-social__about">
+                    <div class="footer-social__block">
+                        <a href="#" class="footer-social__item">Контакты</a>
+                        <a href="#" class="footer-social__item">Работа у нас</a>
+                    </div>
+                    <!-- /.footer-social__block -->
+                    <div class="footer-social__block">
+                        <a href="#" class="footer-social__item">Реклама</a>
+                        <a href="#" class="footer-social__item">Партнерство</a>
+                    </div>
+                    <!-- /.footer-social__block -->
+                </div>
+                <!-- /.footer-social__about -->
+                <div class="footer-social__links">
+                    <a href="https://facebook.com" target="_blank" class="footer-social__icon footer-social__icon--facebook">
+                        <img src="img/footer/Facebook.svg" alt="иконка Facebook">
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="footer-social__icon footer-social__icon--twitter">
+                        <img src="img/footer/Twitter.svg" alt="иконка Twitter">
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="footer-social__icon footer-social__icon--youtube">
+                        <img src="img/footer/YouTube.svg" alt="иконка Youtube">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer-social__icon footer-social__icon--instagram">
+                        <img src="img/footer/Instagram.svg" alt="иконка Instagram">
+                    </a>
+                </div>
+                <!-- /.footer-social__links -->
+            </div>
+            <!-- /.footer-social -->
+            <div class="footer-bottom">
+                <span class="footer-bottom__text">Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб разработке: статьи, новости, видеоуроки, подборки, ссылки и курсы. Материалы на сайте бесплатны, но при копировании, указывайте ссылку.</span> 
+                <!-- /.footer-bottom__text -->
+                <span class="footer-bottom__year">© 2020 Universal Magazine</span> 
+                <!-- /.footer-bottom__year -->
+            </div>
+            <!-- /.footer-bottom -->
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+
+    <a class="button-top" id="upbutton">
+        <img src="img/up-arrow.png" alt="Кнопка вверх" class="button-top__image">
+    </a>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

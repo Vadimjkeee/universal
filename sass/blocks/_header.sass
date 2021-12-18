@@ -1,0 +1,98 @@
+.navbar
+    background-color: $bg-section
+    padding-bottom: 15px
+    &-article
+        background-color: $white-text
+        padding-bottom: 0
+    &-block
+        display: flex
+        align-items: center
+        justify-content: space-between
+        color: $white-text
+        padding-top: 15px
+        padding-bottom: 15px
+        &__menu
+            &-button
+                display: none
+        &--article
+            padding-bottom: 5px
+    &-bottom
+        display: none
+        &--visible
+            display: block
+    &-logo
+        display: flex
+        align-items: center
+        &__icon
+            display: flex
+            align-items: center
+            width: 40px
+            height: 40px
+            background-color: $white-text
+            border-radius: 50%
+            margin-right: 10px
+        &__text
+            text-decoration: none
+            color: inherit
+            font-family: 'Roboto Slab', serif
+            font-size: 24px
+            &--article
+                color: $btn-color
+    &-menu
+        list-style: none
+        display: flex
+        justify-content: space-between
+        margin-left: 52px
+        margin-right: 94px
+        &--article
+            color: $input-text
+        &__item
+            &:not(:last-child)
+                margin-right: 30px
+        &__link
+            text-decoration: none
+            color: inherit
+            font-size: 14px
+            line-height: 20px
+            +bold
+    &-recede
+        height: 450px
+.search
+    display: flex
+    position: relative
+    overflow: hidden
+    border-radius: 6px
+    height: 40px
+    &__input
+        width: 263px
+        height: 100%
+        background-color: $gray-form
+        color: $input-text
+        border: none
+        font-size: 12px
+        line-height: 15px
+        padding-left: 25px
+        padding-right: 75px
+        outline: 0
+        &::placeholder
+            color: $input-text
+        &--article
+            background-color: $active-tab
+            font-size: 14px
+            line-height: 20px
+    &__button
+        position: absolute
+        display: flex
+        justify-content: center
+        align-items: center
+        top: 0
+        right: 0
+        width: 65px
+        height: 100%
+        border: none
+        background-color: $gray-form
+        cursor: pointer
+        &--article
+            background-color: $active-tab
+.article-body
+    background-color: $white-text

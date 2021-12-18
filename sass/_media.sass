@@ -1,0 +1,757 @@
+@media (min-width: 993px)
+    .hover
+        &-button
+            &:hover
+                background-color: $hover-btn-color
+            &-white
+                &:hover
+                    background-color: $tabs-border-color
+    .button
+        &-top
+            cursor: pointer
+    .navbar
+        &-menu
+            &__link
+                &::after
+                    display: block
+                    content: ""
+                    height: 3px
+                    width: 0%
+                    background-color: $btn-color
+                    transition: width 0.4s ease-in-out
+                &:hover
+                    &::after
+                        width: 100%
+    .articles
+        &-tag
+            &__button
+                &:hover
+                    border: 1px solid $btn-color
+        &-repeat
+            &:hover
+                border: 1px solid $btn-color
+                padding: 24px 24px 29px 24px
+        &-social
+            &__icon
+                &:hover
+                    background-color: $instagram-bg
+    .footer
+        &-links
+            &__link
+                &::after
+                    display: block
+                    content: ""
+                    height: 3px
+                    width: 0%
+                    background-color: $btn-color
+                    transition: width 0.4s ease-in-out
+                &:hover
+                    &::after
+                        width: 100%
+        &-social
+            &__item
+                &::after
+                    display: block
+                    content: ""
+                    height: 3px
+                    width: 0%
+                    background-color: $btn-color
+                    transition: width 0.4s ease-in-out
+                &:hover
+                    &::after
+                        width: 100%
+            &__icon
+                &:hover
+                    background-color: $popular-bg-color
+    .lifehack
+        &-same
+            &:hover
+                border: 1px solid $btn-color
+                padding: 24px 24px 29px 24px
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+    .navbar
+        &-menu
+            padding-left: 0
+            margin-left: 15px
+            margin-right: 40px
+            &__item
+                &:not(:last-child)
+                    margin-right: 12px
+    .popular
+        &-block
+            padding: 20px 0
+            flex-wrap: wrap
+            &__item
+                padding: 0 10px
+            &__info
+                margin-right: 0
+    .article
+        &-container
+            margin: 0
+    .other
+        &-block
+            &__title
+                font-size: 15px
+    .articles
+        &-work
+            padding: 0
+            height: 340px
+            &__wrapper
+                border-radius: 10px 10px 0 0
+                padding: 10px 0 0 15px
+            &__comment
+                padding: 10px 0 0 15px
+            &__name
+                font-size: 12px
+            &__com
+                font-size: 12px
+        &-project
+            height: 340px
+            &__wrapper
+                left: 15px
+            &__popular
+                margin-bottom: 70px
+        &-check
+            height: 140px
+            &__block
+                padding-top: 10px
+                padding-left: 15px
+            &__title
+                font-size: 14px
+                line-height: 20px
+            &__download
+                padding-top: 9px
+                padding-bottom: 11px
+        &-tag
+            height: 340px
+            &__title
+                padding: 13px 15px
+            &__block
+                padding: 10px 0px 10px 15px
+            &__button
+                padding: 4px 10px
+        &-repeat
+            height: 140px
+            padding: 10px 10px 10px 15px
+            &__text
+                font-size: 12px
+                line-height: 15px
+            &__title
+                font-size: 14px
+        &-tools
+            height: 310px
+            &__image
+                height: 80%
+            &__title
+                padding: 5px 13px 10px 15px
+        &-social
+            height: 140px
+            padding: 15px 25px 23px 25px
+            &__block
+                padding: 0
+    .news
+        &-block
+            &__title
+                font-size: 16px
+                line-height: 20px
+            &__text
+                margin-bottom: 5px
+                font-size: 12px
+                line-height: 15px
+    .lifehack
+        &-same
+            padding: 15px 15px 15px 15px
+    .footer
+        &-links
+            &__block
+                flex-basis: 33%
+                margin-bottom: 20px
+        &-social
+            &__about
+                margin-left: 10px
+                margin-right: 200px
+@media (max-width: 992px)
+    body
+        padding-top: 70px
+    button
+        cursor: default
+    a.button
+        &:hover
+            cursor: default
+    a
+        &:hover
+            cursor: default
+    .container
+        max-width: 700px
+    .navbar
+        padding-bottom: 10px
+        &-block
+            &__menu
+                &-button
+                    display: flex
+        &__search
+            display: none
+        &-recede
+            display: none
+        &__mobile
+            &_fixed
+                position: fixed
+                left: 0
+                top: 0
+                right: 0
+                z-index: 99
+                background-color: $bg-section
+                &--article
+                    background-color: $white-text
+        &-bottom
+            position: fixed
+            bottom: 0
+            left: 0
+            right: 0
+            top: 70px
+            padding-top: 15px
+            overflow-y: scroll
+            background-color: $bg-section
+            color: $white-text
+        &-menu
+            display: none
+            &__item
+                &:not(:last-child)
+                    margin-right: 0
+            &__item
+                &--mobile
+                    margin-bottom: 10px
+            &__link
+                &::after
+                    display: none
+            &--mobile
+                &-visible
+                    margin: 0
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+        &__search
+            &--mobile
+                &-visible
+                    display: flex
+    .menu
+        &-button
+            width: 16px
+            height: 13px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            flex-direction: column
+            border: none
+            background-color: inherit
+            outline: 0
+            &__line
+                width: 16px
+                height: 1px
+                background-color: $white-text
+                &--article
+                    background-color: $bg-section
+    .hero
+        padding-top: 460px
+        background-color: $bg-section
+        padding-bottom: 20px
+    .main
+        &-block
+            &__nav
+                margin-left: 0
+                margin-right: 0
+            &__note
+                top: -10%
+                right: 0
+                left: 97%
+                cursor: default
+            &__info
+                padding-left: 0
+            &__title
+                font-size: 42px
+                line-height: 53px
+    .article
+        &-block
+            height: 550px
+        &-about
+            height: 70px
+            &__description
+                padding: 14px 0 14px 15px
+        &-slider
+            height: 480px
+        &-btn
+            &__item
+                &:hover
+                    border-color: $tabs-border-color
+                    background-color: $white-text
+        &-repost
+            padding-bottom: 40px
+            &__item
+                margin-bottom: 10px
+    .author
+        &-material
+            margin: 0 0 25px 25px
+            &__subtitle
+                cursor: default
+            &__animal
+                cursor: default
+            &__comment
+                cursor: default
+    .other
+        padding-bottom: 30px
+        &-block
+            flex-wrap: wrap
+            &__item
+                flex-basis: 47%
+                margin-bottom: 30px
+                &:nth-child(2)
+                    margin-right: 0
+            &__title
+                font-size: 19px
+    .comments
+        &-container
+            margin-left: 0
+        &-header
+            &__title
+                line-height: 0
+                font-size: 22px
+            &__number
+                font-size: 25px
+                line-height: 0
+        &-block
+            &__text
+                font-size: 14px
+                line-height: 20px
+                margin-top: 5px
+    .popular
+        &-block
+            max-width: 700px
+            &__item
+                flex-basis: 50%
+                padding: 8px 15px
+                &:nth-child(1)
+                    border-bottom: 1px solid $tabs-text-color
+                &:nth-child(2)
+                    border-bottom: 1px solid $tabs-text-color
+                    border-right: none
+            &__link
+                width: 100%
+                display: flex
+                justify-content: space-between
+    .articles
+        &-block
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(8, min-content)
+        &-work
+            grid-column: 1
+            grid-row: span 2
+            &__wrapper
+                background: $white-text
+            &__icon
+                display: none
+            &__number
+                display: none
+            &__name
+                font-size: 11px
+                margin-left: 6px
+            &__com
+                font-size: 9px
+        &-project
+            grid-column: 2
+            grid-row: span 2
+            &__popular
+                margin-bottom: 125px
+        &-check
+            grid-column: 1
+            grid-row: 3
+            &__title
+                font-size: 16px
+        &-tag
+            grid-column: 2
+            grid-row: 3 / 5
+            &__title
+                padding: 20px 20px
+            &__block
+                padding: 23px 25px 10px 20px
+            &__button
+                padding: 5px 20px
+        &-tools
+            grid-column: 1
+            grid-row: 4 / 6
+            height: 340px
+        &-repeat
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            &__title
+                font-size: 18px
+            &__text
+                font-size: 14px
+                line-height: 19px
+        &-social
+            &__block
+                padding: 0px 25px
+    .investigation
+        &__title
+            font-size: 34px
+            line-height: 33px
+    .news
+        &-published
+            display: none
+        &-block
+            margin-right: 0
+    .lifehack
+        &-wrapper
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(6, 1fr)
+        &-slider
+            grid-column: span 2
+            grid-row: span 3
+        &__career
+            grid-column: span 2
+            grid-row: 4 / 6
+        &__callisthenics
+            grid-column: 1
+            grid-row: 6
+        &__plugins
+            grid-column: 2
+            grid-row: 6
+    .footer
+        &-bottom
+            flex-direction: column
+            &__text
+                margin-bottom: 10px
+                max-width: 100%
+        &-social
+            &__about
+                display: flex
+                flex-wrap: wrap
+                margin-left: 35px
+                margin-right: 60px
+            &__block
+                flex-direction: column
+            &__item
+                &::after
+                    display: none
+                &:nth-child(3)
+                    margin-right: 40px
+@media (max-width: 767px)
+    .container
+        max-width: 576px
+        width: 93%
+    .hero
+        &-block
+            height: 460px
+        &-slider
+            display: none
+        &-tabs
+            width: 100%
+            border-radius: 10px
+            &__item
+                &--orange
+                    padding-bottom: 19px
+    .article
+        &-block
+            height: 500px
+        &-slider
+            height: 410px
+        &-about
+            height: 90px
+        &__text
+            font-size: 14px
+            line-height: 23px
+            &--quote
+                font-size: 20px
+                line-height: 25px
+    .articles
+        &-work
+            &__name
+                display: none
+            &__com
+                margin-left: 7px
+                font-size: 10px
+        &-project
+            &__popular
+                margin-bottom: 100px
+        &-tag
+            &__title
+                padding: 15px 20px
+            &__block
+                padding: 10px 5px 10px 20px
+    .news
+        &-block
+            &__info
+                margin-left: 15px
+            &__img
+                flex-basis: 40%
+    .footer
+        &__title
+            font-size: 30px
+            line-height: 35px
+        &-social
+            &__about
+                margin: 0
+                margin-left: 20px
+        &-bottom
+            padding-top: 20px
+@media (max-width: 615px)
+    .articles
+        &-tag
+            &__button
+                padding: 5px 10px
+        &-repeat
+            &__title
+                font-size: 14px
+    .investigation
+        &__title
+            font-size: 28px
+            line-height: 28px
+    .other
+        &-block
+            &__title
+                font-size: 16px
+@media (max-width: 576px)
+    .hero
+        &-block
+            height: 500px
+    .main
+        padding-bottom: 20px
+        &-block
+            &__note
+                left: 92%
+            &__title
+                font-size: 34px
+                line-height: 43px
+            &__description
+                font-size: 15px
+                margin-bottom: 60px
+    .article
+        &-block
+            height: 400px
+            margin-top: 30px
+            margin-bottom: 20px
+        &-slider
+            height: 310px
+            &__button
+                width: 30px
+                height: 30px
+                border-radius: 50%
+                &--next
+                    right: 10px
+                &--prev
+                    left: 10px
+        &-about
+            height: 90px
+            &__description
+                padding: 0
+                padding-top: 10px
+                padding-left: 10px
+    .author
+        &-card
+            float: none
+            margin-left: auto
+            margin-right: auto
+            margin-bottom: 20px
+        &-material
+            float: none
+            margin-left: auto
+            margin-right: auto
+    .other
+        &-block
+            &__item
+                margin-right: 0
+                flex-basis: 100%
+                &:first-child
+                    margin-right: 0
+                &:nth-child(3)
+                    margin-right: 0
+    .comments
+        &-form
+            padding: 15px 40px 35px 15px
+    .popular
+        &-block
+            width: 100%
+            &__item
+                flex-basis: 100%
+                padding: 8px 15px
+                &:not(:last-child)
+                    border-bottom: 1px solid $tabs-text-color
+                    border-right: none
+    .articles
+        &-block
+            grid-template-columns: 1fr
+            grid-template-rows: repeat(14, min-content)
+        &-work
+            grid-column: 1
+            grid-row: span 2
+            padding: 15px 15px 0 15px
+            &__comment
+                padding-top: 5px
+                padding-left: 10px
+        &-project
+            grid-column: 1
+            grid-row: 3 / 5
+        &-tag
+            grid-column: 1
+            grid-row: 5 / 7
+            height: 100%
+        &-tools
+            grid-column: 1
+            grid-row: 7 / 9
+        &-check
+            grid-column: 1
+            grid-row: 9
+        &-repeat
+            grid-column: 1
+        &-social
+            grid-column: 1
+    .investigation
+        &__title
+            font-size: 22px
+            line-height: 24px
+    .news
+        &-block
+            &__title
+                &--mt
+                    margin-top: 15px
+                    margin-bottom: 10px
+            &__text
+                &--mt
+                    margin-top: 0
+            &__item
+                height: 100%
+            &__img
+                width: 100%
+            &__info
+                margin-left: 0
+            &__border
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+    .button
+        &-top
+            right: 15px
+            bottom: 15px
+@media (max-width: 480px)
+    .hero
+        &-block
+            height: 550px
+    .main
+        &-block
+            &__nav
+                margin-bottom: 30px
+                justify-content: space-between
+            &__btn
+                flex-wrap: wrap
+            &__link
+                &:first-child
+                    flex-basis: 100%
+                    display: flex
+                    justify-content: flex-end
+            &__title
+                font-size: 25px
+                line-height: 33px
+            &__description
+                font-size: 13px
+                margin-bottom: 50px
+    .article
+        &-block
+            height: 460px
+        &-about
+            flex-direction: column
+            height: 150px
+            &__description
+                width: 100%
+                height: 50%
+                margin-bottom: 10px
+                border-right: none
+            &__author
+                width: 100%
+                height: 50%
+                padding: 0
+                display: flex
+                justify-content: center
+                align-items: center
+                padding-left: 10px
+                border-top: 1px solid $tabs-border-color
+        &-btn
+            padding-bottom: 20px
+            &__item
+                margin-bottom: 10px
+    .comments
+        &-header
+            flex-direction: column
+            align-items: start
+            padding-bottom: 15px
+            &__left
+                margin-bottom: 10px
+        &-block
+            &__item
+                &--response
+                    padding-left: 20px
+            &__avatar
+                width: 50px
+                height: 50px
+            &__head
+                flex-direction: column
+                align-items: start
+        &-form
+            &__title
+                margin-left: 0
+                font-size: 16px
+            &__image
+                width: 50px
+                height: 50px
+                margin-top: 10px
+    .lifehack
+        &-wrapper
+            grid-template-rows: repeat(7, 1fr)
+        &__career
+            background: $career-block-bg-color
+        &__callisthenics
+            grid-column: span 2
+            grid-row: 6
+        &__plugins
+            grid-column: span 2
+            grid-row: 7
+        &-slider
+            &__title
+                font-size: 23px
+                line-height: 35px
+    .footer
+        &__form
+            flex-direction: column
+        &__input
+            margin-bottom: 15px
+            &-group
+                width: 80%
+                margin-right: 0
+        &__button
+            align-self: center
+        &-links
+            &__block
+                flex-basis: 50%
+        &-social
+            flex-direction: column
+            align-items: center
+            &__image
+                flex-basis: 100%
+                margin-bottom: 10px
+            &__about
+                flex-basis: 100%
+                margin: 0
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-bottom: 10px
+            &__block
+                flex-direction: row
+            &__item
+                margin-right: 10px
+                &:nth-child(3)
+                    margin-right: 10px
+            &__links
+                flex-basis: 100%
