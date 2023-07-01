@@ -15,10 +15,10 @@
         <div class="container">
             <div class="navbar-block">
                 <div class="navbar-logo">
-                    <a href="./main.html" class="navbar-logo__icon">
+                    <a href="./index.html" class="navbar-logo__icon">
                         <img src="img/header/logo.svg" alt="Logo: Universal" class="navbar-logo__image">
                     </a>
-                    <a href="./main.html" class="navbar-logo__text">Universal</a>
+                    <a href="./index.html" class="navbar-logo__text">Universal</a>
                 </div>
                 <!-- /.navbar__logo -->
 
@@ -68,7 +68,7 @@
                 <!-- /.thankyou__title -->
                 <p class="thankyou__text">Наш менеджер свяжется с Ваши в ближайшее время!</p>
                 <!-- /.thankyou__text -->
-                <a href="main.html" class="button thankyou__button hover-button">На главную</a>
+                <a href="index.html" class="button thankyou__button hover-button">На главную</a>
                 <!-- /.button thankyou__button -->
             </div>
             <!-- /.thankyou-block -->
